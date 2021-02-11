@@ -29,7 +29,8 @@
             }
         }
     });
-
+    var Today = new Date(Date.now() - 24*60*60*1000*3).toISOString().slice(0, 10);
+    $("#date").append(Today);
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
